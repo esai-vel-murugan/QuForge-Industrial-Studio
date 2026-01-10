@@ -97,6 +97,10 @@ Run the installer:
 ```bash
 ./install_quforge.sh
 ```
+Update the Application Menu:
+```bash
+update-desktop-database ~/.local/share/applications
+```
 This step:
 - Configures the execution environment
 - Creates a desktop shortcut
