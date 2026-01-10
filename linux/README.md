@@ -1,65 +1,69 @@
-# VLSI: Basic Concepts and Integrated Circuits
+# QuForge Industrial Studio
 
-This repository contains notes and summaries based on the "Basic Concepts of Integrated Circuits" lecture series.
-
----
-
-## 1. Historical Perspective & Moore's Law
-The transition from discrete electronic circuits to **Integrated Circuits (ICs)** revolutionized technology by making electronics cheaper, faster, and more reliable.
-
-* **Miniaturization:** Scaling down transistor sizes (e.g., 90nm → 45nm → 16nm).
-* **Moore's Law:** The number of components in an IC, realized at minimum cost, doubles approximately every two years.
-* **Benefits:**
-    * Increased Speed
-    * Improved Energy Efficiency
-    * Lower cost per transistor
+**QuForge Industrial Studio** is a professional, 10-qubit Quantum Electronic Design Automation (EDA) platform designed for researchers, students, and engineers. It bridges the gap between complex quantum mathematical models and physical circuit design by simulating realistic quantum hardware physics, including noise, decoherence, and connectivity constraints.
 
 ---
 
-## 2. Structure of an Integrated Circuit
-Modern ICs are built in a 3D layered architecture.
+## 🚀 Introduction
 
-* **Bottom Layer:** Active devices (Transistors like PMOS and NMOS).
-* **Interconnect Layers:** Multiple layers of metal (Metal-1, Metal-2, etc.) separated by dielectrics.
-* **Vias:** Conductive "tunnels" used to make electrical connections between different metal layers.
+QuForge provides an integrated environment for designing, simulating, analyzing, and optimizing quantum algorithms. Unlike conventional quantum simulators, QuForge emphasizes **Hardware-Aware Quantum Design**, allowing users to model real-world quantum limitations such as:
 
+- \( T_1 \) relaxation (energy decay)
+- \( T_2 \) dephasing (loss of phase coherence)
+- Electromagnetic Interference (EMI)
+- Physical qubit connectivity constraints
 
-
----
-
-## 3. The Fabrication Process: Photolithography
-Photolithography is the crux of IC manufacturing. It is the process of transferring geometric shapes from a **mask** to a silicon wafer.
-
-### Steps in Photolithography:
-1.  **Film Deposition:** Placing a thin layer of material on the substrate.
-2.  **Photoresist Application:** Coating the surface with light-sensitive material.
-3.  **Exposure:** Using UV light and a mask to define the pattern.
-4.  **Development:** Removing the exposed/unexposed photoresist.
-5.  **Etching:** Chemically removing the undesired material.
-6.  **Photoresist Removal:** Final cleaning to leave only the patterned film.
+This makes QuForge suitable for **industrial-grade quantum workflows**, academic research, and advanced learning.
 
 ---
 
-## 4. Hardware Definitions
-It is essential to distinguish between the different stages of the physical hardware:
+## 🛠️ Key Features
 
-| Term | Description |
-| :--- | :--- |
-| **Silicon Ingot** | A massive cylindrical single crystal of silicon. |
-| **Silicon Wafer** | A thin slice of silicon (e.g., 300mm) used as a substrate. |
-| **Die** | A single rectangular circuit sliced out of a wafer. |
-| **Chip** | A packaged die encapsulated for physical and chemical protection. |
+### 🔷 Interactive Design Canvas
+- Drag-and-drop quantum EDA grid
+- Horizontal lines represent qubits (`Q0`–`Q9`)
+- Vertical axis represents time in nanoseconds (ns)
 
+### 🔷 Hardware Simulation
+- Configurable \( T_1 \), \( T_2 \), and readout error rates
+- Realistic noise and decoherence modeling
+- Hardware-constrained execution timing
 
+### 🔷 Industrial Resource Reporting
+- Circuit fidelity estimation
+- State vector probability analysis
+- Top 8 most probable quantum states displayed
+
+### 🔷 Diagnostic Tools
+- Crosstalk Map for noise coupling visualization
+- EMI Error Detector for pulse collision prevention
+
+### 🔷 Advanced Visualizers
+- 3D Bloch Sphere visualization
+- Pulse scheduling and timing diagrams
+- Coherence maps for entanglement density
+
+### 🔷 Python Scripting Editor
+- Built-in Python editor for automation
+- Programmatic circuit generation
+- Direct access to internal `self.sim` simulation object
 
 ---
 
-## 5. Semiconductor Industry Business Models
-The industry is divided based on whether a company designs, manufactures, or does both.
+## 💻 Installation
 
-* **Fabless Design:** Companies that only design chips and outsource fabrication (e.g., **Nvidia, Qualcomm**).
-* **Merchant Foundries:** Companies that only manufacture chips for others (e.g., **TSMC, GF**).
-* **IDM (Integrated Device Manufacturers):** Companies that handle both design and fabrication (e.g., **Intel, Samsung**).
+### 1️⃣ Prerequisites
 
----
-*Notes based on NPTEL VLSI Lecture Series.*
+Ensure your system meets the following requirements:
+
+- Linux OS (Ubuntu recommended)
+- Python 3.8 or higher
+- pip (Python package manager)
+- Tkinter (GUI support)
+- Git (version control)
+
+Install prerequisites using:
+
+```bash
+sudo apt update
+sudo apt install python3 python3-pip python3-tk git
