@@ -114,20 +114,20 @@ python3 quforge.py
 ## 📖 How to Use
 ### 🎛️ Visual Circuit Building
 #### Select a Gate
-       - Choose a quantum gate (H, X, Y, Z, M) from the toolbar.
+- Choose a quantum gate (H, X, Y, Z, M) from the toolbar.
 #### Place a Gate:
-        Click on a qubit line (Q0–Q9) at the required time (ns).
+- Click on a qubit line (Q0–Q9) at the required time (ns).
 #### Create Entanglement
-       Click the CNOT button
-       Select the control qubit
-       Select the target qubit
+- Click the CNOT button
+- Select the control qubit
+- Select the target qubit
 #### Analyze Results
-       Use 3D Bloch Sphere for single-qubit states
-       Use Coherence Map for multi-qubit entanglement
+- Use 3D Bloch Sphere for single-qubit states
+- Use Coherence Map for multi-qubit entanglement
 
 ## 🧠 Programmatic Design
-       Click the PYTHON SCRIPT button
-       Write or load .py scripts
-       Generate quantum circuits automatically
-       Click RUN ALGORITHM to execute
+- Click the PYTHON SCRIPT button
+- Write or load .py scripts
+- Generate quantum circuits automatically
+- Click RUN ALGORITHM to execute
 
