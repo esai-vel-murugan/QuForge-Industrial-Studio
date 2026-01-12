@@ -77,7 +77,6 @@ git clone https://github.com/esai-vel-murugan/QuForge-Industrial-Studio.git
 ````
 Navigate to the Linux directory:
 ```bash
-Copy code
 cd QuForge-Industrial-Studio/linux
 ```
 
